@@ -270,7 +270,15 @@ body {
   padding: 14px 14px;
   text-decoration: none;
 }
-
+.navbar  {
+  float: center;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  margin-top: 20px;
+}
 .navbar a:hover {
   background-color: #ffffff;
   color: #031634;
@@ -289,3 +297,20 @@ body {
   text-align: center;
   margin: 0;
 }
+
+.content-box {
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin-left: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
