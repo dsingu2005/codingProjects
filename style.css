@@ -261,18 +261,14 @@ a {
   align-items: center;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-}
+} */
 
-.card:hover .card-img-top {
-  transform: perspective(1000px) rotateX(5deg) rotateY(5deg) rotateZ(2deg);
-}
-
-.card-img-top {
+/* .card-img-top {
   transition: transform 1s ease;
-}
+} */
 
 .card {
   height: 100%;
@@ -284,6 +280,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   color: #6c757d;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .row-spacing {
@@ -342,7 +339,7 @@ a {
 }
 
 .template-by a {
-  color: #007bff;
+  color: #080808;
   text-decoration: none;
 }
 
@@ -409,12 +406,43 @@ body {
   border: none;
 }
 
-#submit-btn {
+#submit-btn{
   background-color: #ffffff;
   border: none;
   color: rgb(0, 0, 0);
 }
-#submit-btn:hover {
+#submit-btn:hover{
   background-color: #6c757d;
   color: white;
 }
+#clear-btn {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+#clear-btn:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+model-viewer {
+  width: 700px;
+  height: 600px;
+  margin: auto;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.card:hover {
+  transform: rotateY(10deg);
+}
+.transparent-input {
+  font-size: 20px;
+}
+#message {
+  height: 300px !important;
+}
+
